@@ -5,7 +5,7 @@ metadata:
   name: wordpress
   namespace: argocd
   labels:
-    id: C0904889
+    id: C0908309
     app: wordpress
     env: dev
 spec:
