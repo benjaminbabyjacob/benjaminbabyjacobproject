@@ -1,0 +1,17 @@
+# proxy/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-proxy
+  namespace: argocd
+  labels:
+    id: C0904889
+    app: nginx-proxy
+    env: dev
+spec:
+  type: NodePort  # Expose to external traffic
+  ports:
+    - port: 80
+      targetPort: 80
+  selector:
+    app: nginx-proxy

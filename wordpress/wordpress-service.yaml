@@ -1,0 +1,16 @@
+# wp/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: wordpress
+  namespace: argocd
+  labels:
+    id: C0908309
+    app: wordpress
+    env: dev
+spec:
+  ports:
+    - port: 80
+      targetPort: 80
+  selector:
+    app: wordpress
