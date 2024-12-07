@@ -9,7 +9,7 @@ metadata:
     app: nginx-proxy
     env: dev
 spec:
-  type: NodePort  # Expose to external traffic
+  type: LoadBalancer  # Expose to external traffic
   ports:
     - port: 80
       targetPort: 80
