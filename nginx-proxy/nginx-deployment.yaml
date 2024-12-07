@@ -5,7 +5,7 @@ metadata:
   name: nginx-proxy
   namespace: argocd
   labels:
-    id: C0904889
+    id: C0908309
     app: nginx-proxy
     env: dev
 spec:
